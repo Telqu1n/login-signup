@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main page</title>
+</head>
+<body>
+  <h1>Welcome to the main page</h1>
+<nav>
+  
+  <form action="{% url 'users:logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>
+
+</nav>
+  <section>
+    <h2>Main Content</h2>
+    <p>This is the main content of the page.</p>
+  </section>
+  <footer>
+    <p>&copy; 2023 Your Website</p>
+  </footer>
+</body>
+</html>
